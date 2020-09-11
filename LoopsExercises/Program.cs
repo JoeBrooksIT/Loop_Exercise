@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace LoopsExercises
 {
@@ -52,6 +53,11 @@ namespace LoopsExercises
             Console.WriteLine("PRINT NUMBERS IN REVERSE ORDER\n");
 
             // Enter your solution here
+            for (int count = 5; count >0; count --)
+            {
+                Console.WriteLine(count + " ");
+            }
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -67,6 +73,12 @@ namespace LoopsExercises
             Console.WriteLine("REVERSE COUNTING\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter number between 1-20");
+            int userNumber = Convert.ToInt32(Console.ReadLine());
+            for (; userNumber > 0; userNumber--)
+            {
+                Console.WriteLine(userNumber + " ");
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -80,6 +92,8 @@ namespace LoopsExercises
             Console.WriteLine("PRINT THE SQUARE OF EVEN NUMBERS\n");
 
             // Enter your solution here
+
+           
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
