@@ -92,9 +92,11 @@ namespace LoopsExercises
             Console.WriteLine("PRINT THE SQUARE OF EVEN NUMBERS\n");
 
             // Enter your solution here
-
-           
-
+            for (int num = 2; num > 0 & num <= 9; num = num + 2)
+            { 
+            Console.WriteLine ((num * num) + "");
+            }
+            
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -110,6 +112,19 @@ namespace LoopsExercises
             Console.WriteLine("GUESS THE MAGIC NUMBER\n");
 
             // Enter your solution here
+             
+            Console.WriteLine("Guess the magic number... Pick a number!");
+            Console.ReadLine();
+            for (int count = 3; count / 3; count++)
+            
+            {
+                Console.WriteLine("You Won!");
+            }
+            int count = 3;
+            while(count / 3)
+            {
+                Console.WriteLine("Try Again");
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
