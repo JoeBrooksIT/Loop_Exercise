@@ -53,7 +53,7 @@ namespace LoopsExercises
             Console.WriteLine("PRINT NUMBERS IN REVERSE ORDER\n");
 
             // Enter your solution here
-            for (int count = 5; count >0; count --)
+            for (int count = 5; count > 0; count--)
             {
                 Console.WriteLine(count + " ");
             }
@@ -93,10 +93,10 @@ namespace LoopsExercises
 
             // Enter your solution here
             for (int num = 2; num > 0 & num <= 9; num = num + 2)
-            { 
-            Console.WriteLine ((num * num) + "");
+            {
+                Console.WriteLine((num * num) + "");
             }
-            
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -112,23 +112,39 @@ namespace LoopsExercises
             Console.WriteLine("GUESS THE MAGIC NUMBER\n");
 
             // Enter your solution here
-             
+
             Console.WriteLine("Guess the magic number... Pick a number!");
-            Console.ReadLine();
-            for (int count = 3; count / 3; count++)
-            
+
+            bool notGuessed = false;
+
+            while (notGuessed == false)
             {
-                Console.WriteLine("You Won!");
+            int guess = Convert.ToInt32(Console.ReadLine());
+                if (guess % 3 == 0)
+                {
+                    Console.WriteLine("You Won!");
+                    notGuessed = true;
+                }
+                else
+                {
+                    Console.WriteLine("Try Again!");
+                }
+
             }
-            int count = 3;
-            while(count / 3)
-            {
-                Console.WriteLine("Try Again");
-            }
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
 
+        
+
     }
 }
+
+
+
+
+
+
+
